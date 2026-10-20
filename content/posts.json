@@ -1,0 +1,26 @@
+{
+  "_readme": "Blog posts. body is simple HTML (p, h2, h3, ul, li, a, strong, em).",
+  "posts": [
+    {
+      "slug": "travelling-with-grandparents",
+      "title": "Travelling with grandparents: how we plan the pace",
+      "date": "2026-10-12",
+      "excerpt": "Three generations on one trip works when the slowest walker sets the rhythm. Here is how we build the days.",
+      "body": "<p>The trips our families remember best are rarely the busiest ones. When grandparents, parents and children travel together, the day has to work for the person who tires first. So that is where we start.</p><h2>One big thing a day</h2><p>Each day has one headline experience, planned for the coolest, quietest hours. The afternoon is for rest, a pool, or a short walk near the hotel. Anyone who wants more can join an optional add-on with the guide.</p><h2>Hotels chosen for walking distance</h2><p>We pick hotels close to the places you came to see, with lifts, step-free entrances where we can find them, and rooms close together so the family is never spread across floors.</p><h2>Food from home, when you want it</h2><p>We arrange vegetarian, Jain and South Indian meals ahead, so nobody has to explain their diet in a new language at the end of a long day.</p><h2>A guide who notices</h2><p>Our guides are briefed on every traveller's needs before you land. They carry a small first-aid kit, know the nearest hospital on every route, and are reachable on the 24×7 helpline.</p><p>If you are planning a trip for your parents, <a href=\"/contact.html\">tell us about them</a>. We will plan around them.</p>"
+    },
+    {
+      "slug": "what-our-safety-promise-covers",
+      "title": "What our safety promise actually covers",
+      "date": "2026-09-28",
+      "excerpt": "We never say \"100% safe\". Here is exactly what we do instead, before you leave and while you are away.",
+      "body": "<p>No honest travel company can promise nothing will go wrong. What we can promise is preparation, people and a plan. This is what that means on every viotours trip.</p><h2>Before you leave</h2><ul><li>Every itinerary is checked by a planner who has travelled it.</li><li>Guides and drivers are background-checked and briefed on your group.</li><li>Travel insurance is included and explained, not buried in the small print.</li><li>We send a one-page emergency card: hotel addresses, the guide's number and the nearest hospital for each night.</li></ul><h2>While you are away</h2><ul><li>A 24×7 helpline answered in India and at your destination.</li><li>Activities such as balloons, paragliding and rafting run only with licensed operators, and we keep a spare day for weather.</li><li>At altitude, we build in acclimatisation days and carry oxygen.</li></ul><h2>If something goes wrong</h2><p>Your guide handles it on the ground, and a planner in our office handles the paperwork, from rebooking flights to talking to the insurer. You should not have to make those calls yourself.</p>"
+    },
+    {
+      "slug": "snow-trips-for-first-timers",
+      "title": "Your first snow holiday: a calm checklist",
+      "date": "2026-09-10",
+      "excerpt": "Layers, footwear and why we plan snow play for the morning. A short guide for families seeing snow for the first time.",
+      "body": "<p>For many families from Chennai or the Gulf, the first sight of snow is the moment of the trip. A little preparation keeps it a happy one.</p><h2>Dress in layers</h2><p>A thermal base, a warm middle layer and a waterproof jacket beat one heavy coat. Children lose heat fastest through hands and feet, so pack two pairs of waterproof gloves each.</p><h2>Footwear matters most</h2><p>Waterproof boots with a good grip. We can arrange rentals at most snow destinations, so you need not buy something you will wear once.</p><h2>Play in the morning</h2><p>Snow is firmest and the light is kindest before noon. We plan snow play early and keep afternoons indoors and warm.</p><h2>Altitude and the elderly</h2><p>Some snow destinations are high. We check every traveller's comfort with altitude before booking and choose routes accordingly.</p>"
+    }
+  ]
+}

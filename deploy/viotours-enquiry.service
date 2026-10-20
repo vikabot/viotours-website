@@ -1,0 +1,20 @@
+# systemd unit for the form endpoint. Copy to /etc/systemd/system/, then:
+#   sudo systemctl daemon-reload && sudo systemctl enable --now viotours-enquiry
+[Unit]
+Description=viotours.in form endpoint
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/viotours
+ExecStart=/usr/bin/python3 /var/www/viotours/server/enquiry_server.py
+Environment=VT_DB=/var/www/viotours/leads.sqlite3
+# Fill these to get an email per lead (Gmail needs an app password):
+Environment=VT_NOTIFY_TO=
+Environment=VT_SMTP_HOST=
+Environment=VT_SMTP_USER=
+Environment=VT_SMTP_PASS=
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

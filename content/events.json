@@ -1,0 +1,8 @@
+{
+  "_readme": "SAMPLE CONTENT — replace with real events. date is YYYY-MM-DD; past events hide automatically at build time.",
+  "events": [
+    {"date": "2026-11-22", "title": "Winter in the Alps: an evening for families", "where": "Chennai · venue confirmed on RSVP", "text": "Our planners walk through the January Swiss departure: what to pack for grandparents and children, visas and the day-by-day pace."},
+    {"date": "2026-12-06", "title": "Honeymoon planning, one couple at a time", "where": "Online · 45 minutes", "text": "Book a private slot to talk through the Maldives, Bali or a mountain escape. No hard sell."},
+    {"date": "2027-01-17", "title": "Travel meet-up for UAE families", "where": "Ras Al Khaimah", "text": "Meet the team, hear about spring departures and bring your questions about travelling from the UAE."}
+  ]
+}
