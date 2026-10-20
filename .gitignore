@@ -1,0 +1,6 @@
+dist/
+__pycache__/
+*.pyc
+server/leads.sqlite3
+leads.sqlite3
+.DS_Store
