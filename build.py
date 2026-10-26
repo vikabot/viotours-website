@@ -23,7 +23,7 @@ SITE_URL = "https://www.viotours.in"
 TODAY = dt.date.today()
 
 # Shows a thin banner on every page while packages/prices are placeholders. Set False at launch.
-SAMPLE_CONTENT = True
+SAMPLE_CONTENT = False
 
 esc = html.escape
 
