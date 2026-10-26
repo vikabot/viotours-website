@@ -69,10 +69,19 @@ def inr(n: int) -> str:
     return ",".join(parts) + "," + tail
 
 
+_logo_n = 0
+
+
 def logo_svg() -> str:
+    """Inline the pin-and-orbit mark; gradient ids are made unique so header and footer copies don't clash."""
+    global _logo_n
+    _logo_n += 1
     svg = (ROOT / "assets" / "img" / "logo-mark.svg").read_text(encoding="utf-8")
     svg = re.sub(r"<title>.*?</title>", "", svg, flags=re.S)
-    return svg.replace('role="img" aria-label="viotours mark, GPS info pin"', 'aria-hidden="true" focusable="false"')
+    svg = svg.replace('role="img" aria-label="viotours"', 'aria-hidden="true" focusable="false"')
+    for gid in ("g", "p", "n", "front"):
+        svg = svg.replace(f'id="{gid}"', f'id="{gid}{_logo_n}"').replace(f"url(#{gid})", f"url(#{gid}{_logo_n})")
+    return svg
 
 
 def kolam(x: int, y: int, cols: int = 5, rows: int = 4, pitch: int = 24) -> str:
@@ -133,6 +142,21 @@ def media(pkg: dict, alt: bool = False) -> str:
     return f'<svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">{body}</svg>'
 
 
+SCENES["fjord"] = """<rect width="320" height="200" fill="var(--surface-sunk)"/><circle cx="252" cy="46" r="18" fill="var(--accent)"/>
+<path d="M0 200 L0 60 L40 40 L78 120 L96 200Z" fill="var(--brand)"/><path d="M320 200 L320 50 L268 72 L236 128 L214 200Z" fill="var(--brand)"/>
+<path d="M150 150 L176 70 L200 150Z" fill="var(--brand-strong)"/><path d="M176 70 L186 98 L176 92 L168 100Z" fill="var(--surface-raised)"/>
+<path d="M60 160 Q160 150 260 160 L270 200 L50 200Z" fill="var(--brand-strong)"/>
+<path d="M118 170 h44 l-6 7 h-34z" fill="var(--surface-raised)"/><path d="M130 170 v-8 h14 v8" fill="var(--surface-raised)"/>
+<path d="M40 40 Q46 90 44 132" stroke="var(--surface-raised)" stroke-width="2" fill="none" opacity=".7"/>"""
+SCENES["silkroad"] = """<rect width="320" height="200" fill="var(--surface-sunk)"/><circle cx="262" cy="44" r="20" fill="var(--accent)"/>
+<rect x="0" y="172" width="320" height="28" fill="var(--brand-strong)"/>
+<g fill="var(--brand)"><rect x="40" y="76" width="16" height="96"/><path d="M38 76 h20 l-3 -8 h-14z"/><rect x="264" y="76" width="16" height="96"/><path d="M262 76 h20 l-3 -8 h-14z"/>
+<rect x="96" y="96" width="128" height="76"/><path d="M128 96 a32 32 0 0 1 64 0z"/></g>
+<path d="M144 172 v-44 a16 16 0 0 1 32 0 v44z" fill="var(--accent)"/><path d="M152 172 v-36 a8 8 0 0 1 16 0 v36z" fill="var(--brand-strong)"/>
+<g fill="var(--accent)"><rect x="96" y="108" width="128" height="4"/><rect x="40" y="96" width="16" height="3"/><rect x="264" y="96" width="16" height="3"/><rect x="40" y="120" width="16" height="3"/><rect x="264" y="120" width="16" height="3"/></g>
+<path d="M160 64 a4 4 0 1 0 0.1 0" fill="var(--accent)"/>"""
+
+
 HERO_ART = """<svg viewBox="0 0 500 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
 <rect width="500" height="540" fill="var(--surface-sunk)"/>
 <circle cx="360" cy="120" r="56" fill="var(--accent)"/>
@@ -187,9 +211,11 @@ def page(*, path: str, title: str, desc: str, body: str, nav: str = "", noindex:
 <meta property="og:title" content="{esc(full_title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}">
-<meta name="theme-color" content="#a3401f">
+<meta property="og:image" content="{SITE_URL}/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1c2a44">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/Fraunces-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/CormorantGaramond-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/Jost-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -266,10 +292,16 @@ def package_card(p: dict, heading: str = "h3") -> str:
     <{heading} class="card__title"><a href="/packages/{p['slug']}.html">{esc(p['title'])}</a></{heading}>
     <p class="card__places">{esc(p['places'])}</p>
     <div class="card__meta">{chips}</div>
-    <div class="card__foot"><div class="price">₹&#8201;{inr(p['price_inr'])}<small>{esc(p['price_basis'])}</small></div>
+    <div class="card__foot">{price_html(p)}
     <a class="btn btn--accent btn--sm" href="/enquire.html?package={p['slug']}">Request trip</a></div>
   </div>
 </article>"""
+
+
+def price_html(p: dict) -> str:
+    if p.get("price_inr"):
+        return f'<div class="price">₹&#8201;{inr(p["price_inr"])}<small>{esc(p["price_basis"])}</small></div>'
+    return f'<div class="price price--ask">Price on request<small>{esc(p.get("price_basis") or "per person, quoted for your group")}</small></div>'
 
 
 def newsletter_band() -> str:
@@ -326,9 +358,7 @@ def build() -> None:
         <span>{icon("safety", "icon icon--sm")}Guides background-checked</span>
       </div>
     </div>
-    <div class="hero__art">{HERO_ART}
-      <div class="hero__note">{icon("guide")}<div><strong>Your guide meets you at arrivals</strong><span class="muted">and stays with your group until you fly home.</span></div></div>
-    </div>
+    <div class="hero__art hero__art--brand"><img src="/assets/img/hero-brand.jpg" width="1024" height="1024" alt="The viotours pin with a compass star, ringed by an orbit, beside a vintage globe. Bringing travel to life." fetchpriority="high"></div>
   </div>
 </section>
 
@@ -441,19 +471,18 @@ def build() -> None:
       <span class="chip">{icon("guide", "icon icon--sm")}Guide included</span>
       <span class="chip">{icon("safety", "icon icon--sm")}Insured</span>{acts}
     </div>
-    <div class="pkg-mobile-cta"><div class="price">₹&#8201;{inr(p['price_inr'])}<small>{esc(p['price_basis'])}</small></div>
+    <div class="pkg-mobile-cta">{price_html(p)}
       <a class="btn btn--accent" href="/enquire.html?package={p['slug']}">Request this trip</a></div>
     <h2 class="her-h2" style="margin:24px 0 16px">Day by day</h2>
     <ol class="itinerary">{days}</ol>
     <h2 class="her-h2" style="margin:56px 0 24px">What's included</h2>
     <div class="incl"><div class="yes"><h3 class="label" style="margin-bottom:12px">Included</h3><ul>{inc}</ul></div>
     <div class="no"><h3 class="label" style="margin-bottom:12px">Not included</h3><ul>{exc}</ul></div></div>
+    {f'<p class="note mt-6"><strong>Good to know:</strong> {esc(p["note"])}</p>' if p.get("note") else ""}
     <p class="note mt-6">Every itinerary can be adjusted for your group's pace, food and mobility. Activities run with licensed operators, weather permitting.</p>
   </div>
   <aside class="book-panel" aria-label="Request this trip">
-    <span class="eyebrow">From</span>
-    <div class="price">₹&#8201;{inr(p['price_inr'])}<small>{esc(p['price_basis'])}</small></div>
-    <span class="fx" data-inr="{p['price_inr']}"></span>
+    {('<span class="eyebrow">From</span>' + price_html(p) + f'<span class="fx" data-inr="{p["price_inr"]}"></span>') if p.get("price_inr") else price_html(p)}
     <dl>
       <div><dt>Duration</dt><dd>{p['nights']} nights</dd></div>
       <div><dt>Group</dt><dd>{esc(p['group'])}</dd></div>

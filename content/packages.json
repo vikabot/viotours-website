@@ -1,13 +1,293 @@
 {
-  "_readme": "SAMPLE CONTENT — replace with your real packages and prices before launch. featured: true + position (1-3) puts a package on the home page. active: false hides it everywhere. image: a path under assets/img/ replaces the illustrated placeholder. styles: luxury | adventure | honeymoon | family | snow. activities: kayak | cruise | trail | cycling | motorbike | paragliding | balloon | bus | car.",
+  "_readme": "Packages. featured: true + position (1-3) puts a package on the home page. active: false hides it everywhere. price_inr: null shows 'Price on request'. note: optional line under the itinerary. image: a path under assets/img/ replaces the illustrated placeholder. styles: luxury | adventure | honeymoon | family | snow. activities: kayak | cruise | trail | cycling | motorbike | paragliding | balloon | bus | car.",
   "packages": [
+    {
+      "slug": "almaty-snow-games",
+      "title": "Almaty: snow games",
+      "places": "Almaty · Shymbulak · Big Almaty Lake · Charyn Canyon",
+      "summary": "Spring snow in the Tien Shan: ski and snowboard lessons at Shymbulak, snow tubing and a horse sleigh, then a frozen alpine lake and a canyon day, a short flight from Delhi or Dubai.",
+      "styles": [
+        "snow",
+        "adventure",
+        "family"
+      ],
+      "activities": [
+        "trail",
+        "car"
+      ],
+      "scene": "alps",
+      "image": "",
+      "nights": 6,
+      "group": "6–15 travellers",
+      "departure": "Small-group departure · late Mar / early Apr 2027",
+      "flag": "Snow",
+      "price_inr": null,
+      "price_basis": "per person, twin share, flights from India or the UAE incl.",
+      "featured": true,
+      "position": 1,
+      "active": true,
+      "itinerary": [
+        [
+          "Day 1",
+          "Arrive Almaty",
+          "Your guide meets you at arrivals. An easy evening up Kok-Tobe by cable car for the city lights against the mountains."
+        ],
+        [
+          "Day 2",
+          "First day on snow",
+          "Gondola from Medeu up to Shymbulak. Beginners start with a private ski or snowboard instructor; non-skiers try snow tubing and a horse sleigh."
+        ],
+        [
+          "Day 3",
+          "Talgar Pass",
+          "Upper lifts to Talgar Pass at about 3,200 m, weather permitting, for views of Talgar Peak. Afternoon free on the slopes or in the spa."
+        ],
+        [
+          "Day 4",
+          "Big Almaty Lake",
+          "A 4×4 drive to the lake, often still frozen at the end of March. Snow play and a hot lunch in the mountains."
+        ],
+        [
+          "Day 5",
+          "Charyn Canyon",
+          "A full day in the 'little Grand Canyon' of Kazakhstan: an easy walk through the Valley of Castles with your guide."
+        ],
+        [
+          "Day 6",
+          "Almaty at your pace",
+          "Zenkov Cathedral, Panfilov Park and the Green Bazaar, then a farewell Kazakh dinner."
+        ],
+        [
+          "Day 7",
+          "Fly home",
+          "Airport transfer with assisted check-in."
+        ]
+      ],
+      "includes": [
+        "Return flights from India or the UAE",
+        "6 nights in a 4-star hotel",
+        "Shymbulak lift passes and a beginners' ski or snowboard lesson",
+        "Ski or snowboard equipment and clothing rental",
+        "Private transport and 4×4 for the lake",
+        "Daily breakfast and 4 dinners, vegetarian options",
+        "A viotours guide throughout",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Visa: not needed for Indian passports for stays up to 14 days (other nationalities: we check with you)",
+        "Extra ski lessons",
+        "Lunches on free days"
+      ],
+      "note": "Late season: Shymbulak's ski season runs into April. We set final dates with the resort's snow report, and plan snow time for the mornings when it is firmest."
+    },
+    {
+      "slug": "new-zealand-adventure",
+      "title": "New Zealand adventure",
+      "places": "Auckland · Rotorua · Tongariro · Queenstown · Milford Sound",
+      "summary": "Autumn in New Zealand: glowworm caves, a volcanic alpine crossing, jet boats and bungy in Queenstown, and a cruise through Milford Sound. Golden Arrowtown to finish.",
+      "styles": [
+        "adventure"
+      ],
+      "activities": [
+        "kayak",
+        "cruise",
+        "trail",
+        "cycling"
+      ],
+      "scene": "fjord",
+      "image": "",
+      "nights": 9,
+      "group": "6–15 travellers",
+      "departure": "Small-group departure · April 2027",
+      "flag": "Adventure",
+      "price_inr": null,
+      "price_basis": "per person, twin share, flights from India or the UAE incl.",
+      "featured": true,
+      "position": 2,
+      "active": true,
+      "itinerary": [
+        [
+          "Day 1",
+          "Arrive Auckland",
+          "Met at arrivals. Sky Tower at sunset and a harbour walk."
+        ],
+        [
+          "Day 2",
+          "Waitomo to Rotorua",
+          "Boat ride through the Waitomo glowworm caves, then on to Rotorua and an evening Māori cultural experience with a hāngī dinner."
+        ],
+        [
+          "Day 3",
+          "Rotorua thrills",
+          "Geothermal valleys in the morning; mountain biking in the Redwoods or the Skyline luge in the afternoon."
+        ],
+        [
+          "Day 4",
+          "Tongariro Alpine Crossing",
+          "New Zealand's best day hike across volcanic craters and emerald lakes, weather permitting, with a shorter walk for anyone who prefers it."
+        ],
+        [
+          "Day 5",
+          "Fly to Queenstown",
+          "Domestic flight south. Skyline gondola and luge above Lake Wakatipu."
+        ],
+        [
+          "Day 6",
+          "Jet boat and bungy",
+          "Shotover River jet boat for everyone; the Kawarau Bridge bungy for the brave."
+        ],
+        [
+          "Day 7",
+          "Milford Sound",
+          "Scenic drive into Fiordland and a cruise beneath the waterfalls, with an optional sea-kayak."
+        ],
+        [
+          "Day 8",
+          "Your adventure day",
+          "Choose a tandem skydive, canyon swing or a gentle lakeside cycle to Frankton."
+        ],
+        [
+          "Day 9",
+          "Arrowtown in autumn",
+          "The old gold-mining town at its April best, with its trees turning gold. Farewell dinner."
+        ],
+        [
+          "Day 10",
+          "Fly home",
+          "Airport transfer with assisted check-in."
+        ]
+      ],
+      "includes": [
+        "Return international flights",
+        "Domestic flight to Queenstown",
+        "9 nights in 4-star hotels and lodges",
+        "Waitomo, Māori cultural evening, jet boat and Milford Sound cruise",
+        "Private coach throughout",
+        "Daily breakfast and 5 dinners, vegetarian options",
+        "A viotours guide throughout",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "New Zealand visitor visa (we prepare the file with you)",
+        "Bungy, skydive and canyon swing",
+        "Lunches"
+      ],
+      "note": "Tongariro and Milford Sound depend on the weather; we keep a spare half-day and an alternative for each."
+    },
+    {
+      "slug": "uzbekistan-kyrgyzstan-silk-road",
+      "title": "Uzbekistan & Kyrgyzstan: Silk Road to the mountains",
+      "places": "Tashkent · Samarkand · Bukhara · Bishkek · Issyk-Kul · Karakol",
+      "summary": "The blue domes of Samarkand and Bukhara by high-speed train, then across to Kyrgyzstan for alpine valleys, a lake the size of a sea and a yurt lunch. May is the season for both.",
+      "styles": [
+        "family",
+        "adventure",
+        "luxury"
+      ],
+      "activities": [
+        "bus",
+        "trail",
+        "car"
+      ],
+      "scene": "silkroad",
+      "image": "",
+      "nights": 10,
+      "group": "6–15 travellers",
+      "departure": "Small-group departure · May 2027",
+      "flag": "Silk Road",
+      "price_inr": null,
+      "price_basis": "per person, twin share, flights from India or the UAE incl.",
+      "featured": true,
+      "position": 3,
+      "active": true,
+      "itinerary": [
+        [
+          "Day 1",
+          "Arrive Tashkent",
+          "Met at arrivals. Chorsu Bazaar and the Khast Imam complex."
+        ],
+        [
+          "Day 2",
+          "High-speed train to Samarkand",
+          "Afrosiyob train in about two hours. The Registan at golden hour."
+        ],
+        [
+          "Day 3",
+          "Samarkand",
+          "Shah-i-Zinda, Gur-e-Amir and Bibi-Khanym, with a paper-making workshop in Konigil."
+        ],
+        [
+          "Day 4",
+          "On to Bukhara",
+          "Train to Bukhara. Evening at Lyabi-Hauz under the mulberry trees."
+        ],
+        [
+          "Day 5",
+          "Bukhara",
+          "The Ark fortress, Kalyan Minaret and the old trading domes, with a folk show at dinner."
+        ],
+        [
+          "Day 6",
+          "Back to Tashkent",
+          "Fast train to Tashkent; the metro's palace-like stations and a free evening."
+        ],
+        [
+          "Day 7",
+          "Fly to Bishkek",
+          "Short flight to Kyrgyzstan. Ala-Too Square and Osh Bazaar."
+        ],
+        [
+          "Day 8",
+          "Ala-Archa National Park",
+          "A guided valley walk under snow peaks, paced for every age."
+        ],
+        [
+          "Day 9",
+          "Issyk-Kul",
+          "Drive to the lake. Cholpon-Ata's open-air petroglyphs and a lakeside evening."
+        ],
+        [
+          "Day 10",
+          "Karakol and Jeti-Oguz",
+          "The red 'Seven Bulls' rocks, a yurt lunch with a nomad family and an eagle-hunting demonstration."
+        ],
+        [
+          "Day 11",
+          "Fly home",
+          "Drive back to Bishkek for your flight."
+        ]
+      ],
+      "includes": [
+        "Return international flights and the Tashkent–Bishkek flight",
+        "10 nights in 4-star and boutique hotels",
+        "Afrosiyob high-speed train tickets",
+        "Private transport in both countries",
+        "Daily breakfast and 6 dinners, vegetarian options",
+        "viotours guides in both countries",
+        "Entry fees on the itinerary",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Uzbekistan and Kyrgyzstan e-visas (we apply with you)",
+        "Lunches",
+        "Camera fees at some monuments"
+      ],
+      "note": "May has mild days in the Silk Road cities and green valleys in Kyrgyzstan. High-pasture yurt camps such as Song-Kul usually open from June, so this route stays lower."
+    },
     {
       "slug": "swiss-alps-snow-and-rail",
       "title": "Swiss Alps by snow train",
       "places": "Zurich · Lucerne · Interlaken · Zermatt",
       "summary": "Glacier Express, a morning on Jungfraujoch and a quiet chalet week in Zermatt, paced for grandparents and children alike.",
-      "styles": ["snow", "family", "luxury"],
-      "activities": ["trail", "bus"],
+      "styles": [
+        "snow",
+        "family",
+        "luxury"
+      ],
+      "activities": [
+        "trail",
+        "bus"
+      ],
       "scene": "alps",
       "image": "",
       "nights": 8,
@@ -16,27 +296,68 @@
       "flag": "Snow",
       "price_inr": 425000,
       "price_basis": "per person, twin share, flights from Chennai or Dubai incl.",
-      "featured": true,
-      "position": 1,
-      "active": true,
+      "featured": false,
+      "position": 0,
+      "active": false,
       "itinerary": [
-        ["Day 1", "Arrive Zurich", "Your guide meets you at arrivals. Private coach to the lakeside hotel in Lucerne; an easy evening walk across the Chapel Bridge."],
-        ["Day 2", "Mount Pilatus", "Cogwheel railway up, cable car down. Time is built in for rest stops and warm drinks at the summit."],
-        ["Day 3–4", "Interlaken and Jungfraujoch", "The rail journey to the Top of Europe. Our guide carries altitude kits and plans the day around the slowest walker."],
-        ["Day 5", "Glacier Express", "First-class panoramic carriages to Zermatt, with lunch served at your seat."],
-        ["Day 6–8", "Zermatt chalet days", "Gornergrat views of the Matterhorn, a beginners' snow-play session for children, and a free day to simply be together."],
-        ["Day 9", "Fly home", "Rail to Zurich airport with assisted check-in."]
+        [
+          "Day 1",
+          "Arrive Zurich",
+          "Your guide meets you at arrivals. Private coach to the lakeside hotel in Lucerne; an easy evening walk across the Chapel Bridge."
+        ],
+        [
+          "Day 2",
+          "Mount Pilatus",
+          "Cogwheel railway up, cable car down. Time is built in for rest stops and warm drinks at the summit."
+        ],
+        [
+          "Day 3–4",
+          "Interlaken and Jungfraujoch",
+          "The rail journey to the Top of Europe. Our guide carries altitude kits and plans the day around the slowest walker."
+        ],
+        [
+          "Day 5",
+          "Glacier Express",
+          "First-class panoramic carriages to Zermatt, with lunch served at your seat."
+        ],
+        [
+          "Day 6–8",
+          "Zermatt chalet days",
+          "Gornergrat views of the Matterhorn, a beginners' snow-play session for children, and a free day to simply be together."
+        ],
+        [
+          "Day 9",
+          "Fly home",
+          "Rail to Zurich airport with assisted check-in."
+        ]
       ],
-      "includes": ["Return flights and airport transfers", "8 nights in 4-star hotels and a family chalet", "Swiss Travel Pass, first class", "Glacier Express seat reservations", "Daily breakfast and 5 dinners, vegetarian and Jain options", "A viotours guide from arrival to departure", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Schengen visa fees (we prepare the file with you)", "Ski equipment rental", "Personal shopping"]
+      "includes": [
+        "Return flights and airport transfers",
+        "8 nights in 4-star hotels and a family chalet",
+        "Swiss Travel Pass, first class",
+        "Glacier Express seat reservations",
+        "Daily breakfast and 5 dinners, vegetarian and Jain options",
+        "A viotours guide from arrival to departure",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Schengen visa fees (we prepare the file with you)",
+        "Ski equipment rental",
+        "Personal shopping"
+      ]
     },
     {
       "slug": "bali-three-generations",
       "title": "Bali for three generations",
       "places": "Ubud · Seminyak · Nusa Penida",
       "summary": "A private villa with a pool, temple mornings with a local storyteller, and an easy pace the elders will thank you for.",
-      "styles": ["family"],
-      "activities": ["cycling", "cruise"],
+      "styles": [
+        "family"
+      ],
+      "activities": [
+        "cycling",
+        "cruise"
+      ],
       "scene": "tropics",
       "image": "",
       "nights": 6,
@@ -45,27 +366,70 @@
       "flag": "Family",
       "price_inr": 192000,
       "price_basis": "per person, twin share, flights incl.",
-      "featured": true,
-      "position": 2,
-      "active": true,
+      "featured": false,
+      "position": 0,
+      "active": false,
       "itinerary": [
-        ["Day 1", "Arrive Denpasar", "Met at the gate, wheelchair assistance on request. Private van to your villa in Ubud."],
-        ["Day 2", "Temples and rice terraces", "Tirta Empul and Tegallalang in the cool of the morning, back for lunch and a rest."],
-        ["Day 3", "Village cycling", "A gentle downhill ride through villages for the active ones; a Balinese cooking class for everyone else."],
-        ["Day 4–5", "Seminyak beach", "A beachfront resort, sunset at Tanah Lot and a day cruise to Nusa Penida."],
-        ["Day 6", "Free day", "Spa, shopping or the pool. Your guide stays on call."],
-        ["Day 7", "Fly home", "Late check-out and airport drop."]
+        [
+          "Day 1",
+          "Arrive Denpasar",
+          "Met at the gate, wheelchair assistance on request. Private van to your villa in Ubud."
+        ],
+        [
+          "Day 2",
+          "Temples and rice terraces",
+          "Tirta Empul and Tegallalang in the cool of the morning, back for lunch and a rest."
+        ],
+        [
+          "Day 3",
+          "Village cycling",
+          "A gentle downhill ride through villages for the active ones; a Balinese cooking class for everyone else."
+        ],
+        [
+          "Day 4–5",
+          "Seminyak beach",
+          "A beachfront resort, sunset at Tanah Lot and a day cruise to Nusa Penida."
+        ],
+        [
+          "Day 6",
+          "Free day",
+          "Spa, shopping or the pool. Your guide stays on call."
+        ],
+        [
+          "Day 7",
+          "Fly home",
+          "Late check-out and airport drop."
+        ]
       ],
-      "includes": ["Return flights", "Private pool villa and beach resort", "All transfers in a private air-conditioned van", "Daily breakfast and 3 dinners", "English or Tamil-speaking guide", "Entry fees on the itinerary", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Visa on arrival fee", "Lunches", "Optional water sports"]
+      "includes": [
+        "Return flights",
+        "Private pool villa and beach resort",
+        "All transfers in a private air-conditioned van",
+        "Daily breakfast and 3 dinners",
+        "English or Tamil-speaking guide",
+        "Entry fees on the itinerary",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Visa on arrival fee",
+        "Lunches",
+        "Optional water sports"
+      ]
     },
     {
       "slug": "cappadocia-and-istanbul",
       "title": "Cappadocia by balloon",
       "places": "Istanbul · Cappadocia · Pamukkale",
       "summary": "A sunrise balloon flight, cave-hotel nights and the Bosphorus by private yacht. For groups who want a little thrill with their comfort.",
-      "styles": ["adventure", "luxury"],
-      "activities": ["balloon", "trail", "cruise"],
+      "styles": [
+        "adventure",
+        "luxury"
+      ],
+      "activities": [
+        "balloon",
+        "trail",
+        "cruise"
+      ],
       "scene": "balloons",
       "image": "",
       "nights": 7,
@@ -74,27 +438,69 @@
       "flag": "Adventure",
       "price_inr": 248000,
       "price_basis": "per person, twin share, flights incl.",
-      "featured": true,
-      "position": 3,
-      "active": true,
+      "featured": false,
+      "position": 0,
+      "active": false,
       "itinerary": [
-        ["Day 1–2", "Istanbul", "Hagia Sophia, the Blue Mosque and the Grand Bazaar, then a private yacht on the Bosphorus at dusk."],
-        ["Day 3", "Fly to Cappadocia", "Check in to a cave hotel. An evening walk through Love Valley with your guide."],
-        ["Day 4", "Sunrise balloon flight", "Licensed operators only, with a weather day kept in reserve. Afternoon at the Göreme open-air museum."],
-        ["Day 5", "Valleys on foot or by ATV", "Choose a guided trail through Rose Valley or an ATV ride. Both end at a family-run pottery."],
-        ["Day 6–7", "Pamukkale", "The white travertine terraces and the ancient pools of Hierapolis."],
-        ["Day 8", "Fly home", "Via Istanbul with lounge access."]
+        [
+          "Day 1–2",
+          "Istanbul",
+          "Hagia Sophia, the Blue Mosque and the Grand Bazaar, then a private yacht on the Bosphorus at dusk."
+        ],
+        [
+          "Day 3",
+          "Fly to Cappadocia",
+          "Check in to a cave hotel. An evening walk through Love Valley with your guide."
+        ],
+        [
+          "Day 4",
+          "Sunrise balloon flight",
+          "Licensed operators only, with a weather day kept in reserve. Afternoon at the Göreme open-air museum."
+        ],
+        [
+          "Day 5",
+          "Valleys on foot or by ATV",
+          "Choose a guided trail through Rose Valley or an ATV ride. Both end at a family-run pottery."
+        ],
+        [
+          "Day 6–7",
+          "Pamukkale",
+          "The white travertine terraces and the ancient pools of Hierapolis."
+        ],
+        [
+          "Day 8",
+          "Fly home",
+          "Via Istanbul with lounge access."
+        ]
       ],
-      "includes": ["Return and domestic flights", "7 nights including 2 in a cave hotel", "Balloon flight with a licensed operator", "Private Bosphorus yacht", "Daily breakfast and 4 dinners", "A viotours guide throughout", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Turkish e-visa", "Optional ATV ride", "Tips for local drivers"]
+      "includes": [
+        "Return and domestic flights",
+        "7 nights including 2 in a cave hotel",
+        "Balloon flight with a licensed operator",
+        "Private Bosphorus yacht",
+        "Daily breakfast and 4 dinners",
+        "A viotours guide throughout",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Turkish e-visa",
+        "Optional ATV ride",
+        "Tips for local drivers"
+      ]
     },
     {
       "slug": "maldives-honeymoon",
       "title": "Maldives, just the two of you",
       "places": "North Malé Atoll",
       "summary": "An overwater villa, a private sandbank dinner and a seaplane arrival. We handle every detail so the week is yours.",
-      "styles": ["honeymoon", "luxury"],
-      "activities": ["kayak", "cruise"],
+      "styles": [
+        "honeymoon",
+        "luxury"
+      ],
+      "activities": [
+        "kayak",
+        "cruise"
+      ],
       "scene": "ocean",
       "image": "",
       "nights": 5,
@@ -105,24 +511,60 @@
       "price_basis": "per person, flights incl.",
       "featured": false,
       "position": 0,
-      "active": true,
+      "active": false,
       "itinerary": [
-        ["Day 1", "Seaplane to the resort", "Met at Malé airport, then a 30-minute seaplane flight to your overwater villa."],
-        ["Day 2", "Reef day", "Snorkelling with a marine guide and a kayak around the house reef."],
-        ["Day 3", "Sandbank dinner", "A private dinner on a sandbank, with a sunset dolphin cruise on the way."],
-        ["Day 4–5", "Slow days", "Couples' spa, a floating breakfast and nothing on the schedule."],
-        ["Day 6", "Fly home", "Seaplane back to Malé for your flight."]
+        [
+          "Day 1",
+          "Seaplane to the resort",
+          "Met at Malé airport, then a 30-minute seaplane flight to your overwater villa."
+        ],
+        [
+          "Day 2",
+          "Reef day",
+          "Snorkelling with a marine guide and a kayak around the house reef."
+        ],
+        [
+          "Day 3",
+          "Sandbank dinner",
+          "A private dinner on a sandbank, with a sunset dolphin cruise on the way."
+        ],
+        [
+          "Day 4–5",
+          "Slow days",
+          "Couples' spa, a floating breakfast and nothing on the schedule."
+        ],
+        [
+          "Day 6",
+          "Fly home",
+          "Seaplane back to Malé for your flight."
+        ]
       ],
-      "includes": ["Return flights and seaplane transfers", "5 nights in an overwater villa", "Half board with one private dinner", "Snorkel and kayak excursions", "Honeymoon set-up and a couples' spa", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Green tax payable at the resort", "Drinks outside meal plan"]
+      "includes": [
+        "Return flights and seaplane transfers",
+        "5 nights in an overwater villa",
+        "Half board with one private dinner",
+        "Snorkel and kayak excursions",
+        "Honeymoon set-up and a couples' spa",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Green tax payable at the resort",
+        "Drinks outside meal plan"
+      ]
     },
     {
       "slug": "japan-cherry-season",
       "title": "Japan in cherry season",
       "places": "Tokyo · Hakone · Kyoto · Osaka",
       "summary": "Bullet trains, a ryokan night with an onsen and Kyoto's temples in bloom, with a guide who knows where the crowds aren't.",
-      "styles": ["luxury", "family"],
-      "activities": ["bus", "trail"],
+      "styles": [
+        "luxury",
+        "family"
+      ],
+      "activities": [
+        "bus",
+        "trail"
+      ],
       "scene": "temple",
       "image": "",
       "nights": 9,
@@ -133,24 +575,62 @@
       "price_basis": "per person, twin share, flights incl.",
       "featured": false,
       "position": 0,
-      "active": true,
+      "active": false,
       "itinerary": [
-        ["Day 1–3", "Tokyo", "Asakusa, Shibuya and a day trip to the Fuji Five Lakes, with Indian vegetarian dinners arranged ahead."],
-        ["Day 4", "Hakone", "A ryokan night with a private onsen and a kaiseki dinner."],
-        ["Day 5–7", "Kyoto in bloom", "Philosopher's Path, Fushimi Inari at dawn, a tea ceremony and Arashiyama's bamboo grove."],
-        ["Day 8–9", "Nara and Osaka", "The deer park at Nara, then Osaka's food streets and a free afternoon."],
-        ["Day 10", "Fly home", "Shinkansen luggage forwarding and assisted check-in."]
+        [
+          "Day 1–3",
+          "Tokyo",
+          "Asakusa, Shibuya and a day trip to the Fuji Five Lakes, with Indian vegetarian dinners arranged ahead."
+        ],
+        [
+          "Day 4",
+          "Hakone",
+          "A ryokan night with a private onsen and a kaiseki dinner."
+        ],
+        [
+          "Day 5–7",
+          "Kyoto in bloom",
+          "Philosopher's Path, Fushimi Inari at dawn, a tea ceremony and Arashiyama's bamboo grove."
+        ],
+        [
+          "Day 8–9",
+          "Nara and Osaka",
+          "The deer park at Nara, then Osaka's food streets and a free afternoon."
+        ],
+        [
+          "Day 10",
+          "Fly home",
+          "Shinkansen luggage forwarding and assisted check-in."
+        ]
       ],
-      "includes": ["Return flights", "9 nights including a ryokan", "Japan Rail Pass and seat reservations", "Luggage forwarding between cities", "Daily breakfast and 5 dinners", "A viotours guide throughout", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Japan visa fees", "Lunches"]
+      "includes": [
+        "Return flights",
+        "9 nights including a ryokan",
+        "Japan Rail Pass and seat reservations",
+        "Luggage forwarding between cities",
+        "Daily breakfast and 5 dinners",
+        "A viotours guide throughout",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Japan visa fees",
+        "Lunches"
+      ]
     },
     {
       "slug": "dubai-family-gathering",
       "title": "A family gathering in the UAE",
       "places": "Dubai · Abu Dhabi · Ras Al Khaimah",
       "summary": "Bring the whole family together for a wedding, anniversary or reunion. Desert camp dinner, a dhow cruise and Jebel Jais for the brave.",
-      "styles": ["family", "adventure"],
-      "activities": ["car", "cruise", "paragliding"],
+      "styles": [
+        "family",
+        "adventure"
+      ],
+      "activities": [
+        "car",
+        "cruise",
+        "paragliding"
+      ],
       "scene": "desert",
       "image": "",
       "nights": 5,
@@ -161,25 +641,68 @@
       "price_basis": "per person, twin share, flights incl.",
       "featured": false,
       "position": 0,
-      "active": true,
+      "active": false,
       "itinerary": [
-        ["Day 1", "Arrive Dubai", "Group meet-and-greet, private coach and a welcome dinner together."],
-        ["Day 2", "Old and new Dubai", "Al Fahidi, the souks by abra, and the Burj Khalifa at sunset. A dhow cruise dinner."],
-        ["Day 3", "Desert camp", "4×4 dune drive, camel rides for the children and a long dinner under the stars."],
-        ["Day 4", "Abu Dhabi", "Sheikh Zayed Grand Mosque and the Louvre Abu Dhabi."],
-        ["Day 5", "Ras Al Khaimah", "Jebel Jais viewpoint; the zipline for those who want it, tea on the deck for those who don't."],
-        ["Day 6", "Fly home", "Assisted check-in at DXB."]
+        [
+          "Day 1",
+          "Arrive Dubai",
+          "Group meet-and-greet, private coach and a welcome dinner together."
+        ],
+        [
+          "Day 2",
+          "Old and new Dubai",
+          "Al Fahidi, the souks by abra, and the Burj Khalifa at sunset. A dhow cruise dinner."
+        ],
+        [
+          "Day 3",
+          "Desert camp",
+          "4×4 dune drive, camel rides for the children and a long dinner under the stars."
+        ],
+        [
+          "Day 4",
+          "Abu Dhabi",
+          "Sheikh Zayed Grand Mosque and the Louvre Abu Dhabi."
+        ],
+        [
+          "Day 5",
+          "Ras Al Khaimah",
+          "Jebel Jais viewpoint; the zipline for those who want it, tea on the deck for those who don't."
+        ],
+        [
+          "Day 6",
+          "Fly home",
+          "Assisted check-in at DXB."
+        ]
       ],
-      "includes": ["Return flights", "5 nights in a family resort", "Private coach for the whole group", "Desert safari and dhow cruise dinner", "Daily breakfast and 4 dinners", "UAE-based viotours host", "Travel insurance and 24×7 helpline"],
-      "excludes": ["UAE visa fees", "Jebel Jais zipline", "Event venue for your function (we can arrange)"]
+      "includes": [
+        "Return flights",
+        "5 nights in a family resort",
+        "Private coach for the whole group",
+        "Desert safari and dhow cruise dinner",
+        "Daily breakfast and 4 dinners",
+        "UAE-based viotours host",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "UAE visa fees",
+        "Jebel Jais zipline",
+        "Event venue for your function (we can arrange)"
+      ]
     },
     {
       "slug": "ladakh-high-passes",
       "title": "Ladakh high passes",
       "places": "Leh · Nubra · Pangong",
       "summary": "Royal Enfield or SUV over Khardung La, a night at Pangong and the monasteries of the Indus, with oxygen and a doctor on call.",
-      "styles": ["adventure", "snow"],
-      "activities": ["motorbike", "car", "trail"],
+      "styles": [
+        "adventure",
+        "snow"
+      ],
+      "activities": [
+        "motorbike",
+        "car",
+        "trail"
+      ],
       "scene": "himalaya",
       "image": "",
       "nights": 7,
@@ -190,16 +713,47 @@
       "price_basis": "per person, twin share, flights from Chennai incl.",
       "featured": false,
       "position": 0,
-      "active": true,
+      "active": false,
       "itinerary": [
-        ["Day 1–2", "Leh, acclimatise", "Two slow days in Leh. Shanti Stupa at sunset and our doctor's check before going higher."],
-        ["Day 3–4", "Nubra Valley", "Over Khardung La by bike or SUV. Sand dunes and Diskit monastery."],
-        ["Day 5", "Pangong", "Along the Shyok river to the lake. A heated luxury camp on the shore."],
-        ["Day 6–7", "Monasteries", "Hemis and Thiksey, and a rafting stretch on the Indus for those who want it."],
-        ["Day 8", "Fly home", "Morning flight from Leh."]
+        [
+          "Day 1–2",
+          "Leh, acclimatise",
+          "Two slow days in Leh. Shanti Stupa at sunset and our doctor's check before going higher."
+        ],
+        [
+          "Day 3–4",
+          "Nubra Valley",
+          "Over Khardung La by bike or SUV. Sand dunes and Diskit monastery."
+        ],
+        [
+          "Day 5",
+          "Pangong",
+          "Along the Shyok river to the lake. A heated luxury camp on the shore."
+        ],
+        [
+          "Day 6–7",
+          "Monasteries",
+          "Hemis and Thiksey, and a rafting stretch on the Indus for those who want it."
+        ],
+        [
+          "Day 8",
+          "Fly home",
+          "Morning flight from Leh."
+        ]
       ],
-      "includes": ["Return flights", "7 nights in hotels and a heated camp", "Royal Enfield or SUV with driver", "Back-up vehicle, oxygen and a doctor on call", "All meals", "Inner Line permits", "Travel insurance and 24×7 helpline"],
-      "excludes": ["Riding gear rental", "Rafting"]
+      "includes": [
+        "Return flights",
+        "7 nights in hotels and a heated camp",
+        "Royal Enfield or SUV with driver",
+        "Back-up vehicle, oxygen and a doctor on call",
+        "All meals",
+        "Inner Line permits",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Riding gear rental",
+        "Rafting"
+      ]
     }
   ]
 }
