@@ -32,7 +32,21 @@ journal + 3 posts, about & safety, contact (form + Google Maps), partner invitat
 5. **Music rights:** the theme is a film composition; clear commercial use (or swap the file).
 6. **Name check:** the design system flags "viotours" as close to giotours.com / geotours.in.
 
-## Deploy (Ubuntu/Debian VPS)
+## Deploy — GitHub Pages (current)
+
+Every push to `main` runs `.github/workflows/static.yml`: it runs `build.py` and publishes `dist/`
+to GitHub Pages at the custom domain www.viotours.in. Pages is static-only, so `server/` isn't used
+there and forms hand off to WhatsApp/email (`enquiryEndpoint: ""` in `js/config.js`).
+
+DNS at your registrar:
+
+| Type | Name | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 |
+| AAAA | @ | 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8002::153, 2606:50c0:8003::153 |
+| CNAME | www | vikabot.github.io |
+
+## Deploy — own VPS (alternative)
 
 ```bash
 rsync -av --delete ./ user@server:/var/www/viotours/      # whole folder (dist + server)

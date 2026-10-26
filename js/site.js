@@ -137,7 +137,13 @@
           '<a href="mailto:' + C.email + "?subject=" + encodeURIComponent("viotours " + data.form) + "&body=" + encodeURIComponent(text) + '">email</a> — your details are already filled in.');
         done();
       };
-      if (!C.enquiryEndpoint) return fallback();
+      if (!C.enquiryEndpoint) {
+        var text = summarise(data);
+        status(form, true, "Last step: send it to a planner on " +
+          '<a href="' + waLink(text) + '" target="_blank" rel="noopener"><strong>WhatsApp</strong></a> or by ' +
+          '<a href="mailto:' + C.email + "?subject=" + encodeURIComponent("viotours " + data.form) + "&body=" + encodeURIComponent(text) + '"><strong>email</strong></a>. Your details are already filled in.');
+        return done();
+      }
       fetch(C.enquiryEndpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r; })
         .then(function () {

@@ -3,7 +3,9 @@ window.VIOTOURS = {
   // Where enquiry, contact, partner and newsletter forms POST (JSON).
   // The bundled Python endpoint (server/enquiry_server.py) listens on /api/enquiry behind nginx.
   // Leave "" to skip the POST and hand the message straight to WhatsApp / email instead.
-  enquiryEndpoint: "/api/enquiry",
+  // GitHub Pages is static-only, so there is no /api/ there: leave "" and forms hand off to WhatsApp/email.
+  // Set to a form service URL (Formspree, Web3Forms…) or your own server's /api/enquiry to store leads.
+  enquiryEndpoint: "",
 
   // Fallback contact if the endpoint is down. International format, digits only.
   whatsappNumber: "910000000000",          // TODO: your WhatsApp Business number
