@@ -25,7 +25,7 @@ journal + 3 posts, about & safety, contact (form + Google Maps), partner invitat
 
 1. **Replace the sample content.** All 7 packages, prices, dates and the 3 events are placeholders.
    Then set `SAMPLE_CONTENT = False` in `build.py` to remove the "Preview site" banner.
-2. **`js/config.js`:** real WhatsApp Business number and inbox (currently `910000000000` / `hello@viotours.in`).
+2. ~~`js/config.js` contact details~~ done: WhatsApp +91 95952 51177, email connect@viotours.in (connect@ and hello@ forward to viotours.in@gmail.com via Spaceship).
 3. **Photos:** drop images in `assets/img/` and set `"image": "assets/img/swiss.jpg"` per package.
    The illustrated scenes are stand-ins.
 4. **Contact page map:** `build.py` points Google Maps at "Chennai, Tamil Nadu" — set your office address.

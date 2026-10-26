@@ -8,8 +8,8 @@ window.VIOTOURS = {
   enquiryEndpoint: "",
 
   // Fallback contact if the endpoint is down. International format, digits only.
-  whatsappNumber: "910000000000",          // TODO: your WhatsApp Business number
-  email: "hello@viotours.in",              // TODO: confirm the inbox
+  whatsappNumber: "919595251177",          // +91 95952 51177 (wa.me format: country code + number, digits only)
+  email: "connect@viotours.in",            // forwards to viotours.in@gmail.com (Spaceship email forwarding)
 
   // Theme music (design system: plays once on load at 35%, mute remembered for the session).
   music: { enabled: true, volume: 0.35, loop: false },

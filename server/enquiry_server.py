@@ -5,7 +5,7 @@ Receives JSON POSTs from the site's forms at /api/enquiry, stores every submissi
 SQLite, and optionally emails it. Run it behind nginx (see deploy/nginx.conf).
 
     VT_SMTP_HOST=smtp.gmail.com VT_SMTP_USER=you@gmail.com VT_SMTP_PASS=app-password \
-    VT_NOTIFY_TO=hello@viotours.in python3 server/enquiry_server.py
+    VT_NOTIFY_TO=viotours.in@gmail.com python3 server/enquiry_server.py
 
 Env vars (all optional):
     VT_PORT        port to listen on (default 8081, bound to 127.0.0.1)
