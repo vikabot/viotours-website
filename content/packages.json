@@ -1,5 +1,5 @@
 {
-  "_readme": "Packages. featured: true + position (1-3) puts a package on the home page. active: false hides it everywhere. price_inr: null shows 'Price on request'. note: optional line under the itinerary. image: a path under assets/img/ replaces the illustrated placeholder. styles: luxury | adventure | honeymoon | family | snow. activities: kayak | cruise | trail | cycling | motorbike | paragliding | balloon | bus | car.",
+  "_readme": "Packages. featured: true + position (1-3) puts a package on the home page. active: false hides it everywhere. price_inr: null shows 'Price on request'. note: optional line under the itinerary. image: a path under assets/img/ replaces the illustrated placeholder. styles: luxury | adventure | honeymoon | family | snow. activities: kayak | cruise | trail | cycling | motorbike | paragliding | balloon | bus | car. image may be a local path or a full https URL (e.g. Unsplash); image_alt describes it; image_fallback is shown if the photo fails to load; photo_credit {name, profile, page, source} prints a credit on the tour page.",
   "packages": [
     {
       "slug": "almaty-snow-games",
@@ -16,7 +16,7 @@
         "car"
       ],
       "scene": "alps",
-      "image": "assets/img/scenes/almaty.svg",
+      "image": "https://images.unsplash.com/photo-1704315348923-f2854e79d4b2?auto=format&fit=crop&w=1400&q=75",
       "nights": 6,
       "group": "6–15 travellers",
       "departure": "Small-group departure · late Mar / early Apr 2027",
@@ -78,7 +78,15 @@
         "Extra ski lessons",
         "Lunches on free days"
       ],
-      "note": "Late season: Shymbulak's ski season runs into April. We set final dates with the resort's snow report, and plan snow time for the mornings when it is firmest."
+      "note": "Late season: Shymbulak's ski season runs into April. We set final dates with the resort's snow report, and plan snow time for the mornings when it is firmest.",
+      "image_alt": "Ski lift climbing the snowy slopes of Shymbulak, Kazakhstan",
+      "image_fallback": "assets/img/scenes/almaty.svg",
+      "photo_credit": {
+        "name": "Frederick Wallace",
+        "profile": "https://unsplash.com/@skirebel",
+        "page": "https://unsplash.com/photos/coNWstBMGK8",
+        "source": "Unsplash"
+      }
     },
     {
       "slug": "new-zealand-adventure",
@@ -95,7 +103,7 @@
         "cycling"
       ],
       "scene": "fjord",
-      "image": "assets/img/scenes/new-zealand.svg",
+      "image": "https://images.unsplash.com/photo-1591640040362-f55d95a6b2bc?auto=format&fit=crop&w=1400&q=75",
       "nights": 9,
       "group": "6–15 travellers",
       "departure": "Small-group departure · April 2027",
@@ -172,7 +180,15 @@
         "Bungy, skydive and canyon swing",
         "Lunches"
       ],
-      "note": "Tongariro and Milford Sound depend on the weather; we keep a spare half-day and an alternative for each."
+      "note": "Tongariro and Milford Sound depend on the weather; we keep a spare half-day and an alternative for each.",
+      "image_alt": "Milford Sound fjord under a blue sky, New Zealand",
+      "image_fallback": "assets/img/scenes/new-zealand.svg",
+      "photo_credit": {
+        "name": "Sébastien Goldberg",
+        "profile": "https://unsplash.com/@sebastiengoldberg",
+        "page": "https://unsplash.com/photos/oXgPDa0OtAk",
+        "source": "Unsplash"
+      }
     },
     {
       "slug": "uzbekistan-kyrgyzstan-silk-road",
@@ -190,7 +206,7 @@
         "car"
       ],
       "scene": "silkroad",
-      "image": "assets/img/scenes/samarkand.svg",
+      "image": "https://images.unsplash.com/photo-1728565721640-117dd6969a17?auto=format&fit=crop&w=1400&q=75",
       "nights": 10,
       "group": "6–15 travellers",
       "departure": "Small-group departure · May 2027",
@@ -272,7 +288,15 @@
         "Lunches",
         "Camera fees at some monuments"
       ],
-      "note": "May has mild days in the Silk Road cities and green valleys in Kyrgyzstan. High-pasture yurt camps such as Song-Kul usually open from June, so this route stays lower."
+      "note": "May has mild days in the Silk Road cities and green valleys in Kyrgyzstan. High-pasture yurt camps such as Song-Kul usually open from June, so this route stays lower.",
+      "image_alt": "Afternoon at Registan Square, Samarkand",
+      "image_fallback": "assets/img/scenes/samarkand.svg",
+      "photo_credit": {
+        "name": "Aleksander Stypczynski",
+        "profile": "https://unsplash.com/@aleksander_stypczynski",
+        "page": "https://unsplash.com/photos/5OZy4VAP2Mg",
+        "source": "Unsplash"
+      }
     },
     {
       "slug": "darjeeling-gangtok-sandakphu",
@@ -288,7 +312,7 @@
         "car"
       ],
       "scene": "himalaya",
-      "image": "assets/img/scenes/darjeeling.svg",
+      "image": "https://images.unsplash.com/photo-1671711847762-b8308b444a42?auto=format&fit=crop&w=1400&q=75",
       "nights": 10,
       "group": "6–12 travellers",
       "level": "High",
@@ -371,7 +395,15 @@
         "Restricted Area Permit for foreign nationals (we arrange it)",
         "Personal trekking gear"
       ],
-      "note": "Adventure level High: four trekking days at altitude on rough trails, up to about 3,636 m. Travellers should be comfortable walking 6–7 hours a day. We send a fitness plan and check every traveller before booking. Ridge lodges are simple and shared."
+      "note": "Adventure level High: four trekking days at altitude on rough trails, up to about 3,636 m. Travellers should be comfortable walking 6–7 hours a day. We send a fitness plan and check every traveller before booking. Ridge lodges are simple and shared.",
+      "image_alt": "The Darjeeling toy train steaming through green hills",
+      "image_fallback": "assets/img/scenes/darjeeling.svg",
+      "photo_credit": {
+        "name": "Vineet Singh",
+        "profile": "https://unsplash.com/@lashlover",
+        "page": "https://unsplash.com/photos/5MUM_RHvFNY",
+        "source": "Unsplash"
+      }
     },
     {
       "slug": "shillong-guwahati-dawki",
@@ -389,7 +421,7 @@
         "cruise"
       ],
       "scene": "meghalaya",
-      "image": "assets/img/scenes/dawki.svg",
+      "image": "https://images.unsplash.com/photo-1647946402690-59e39e84913e?auto=format&fit=crop&w=1400&q=75",
       "nights": 7,
       "group": "6–15 travellers",
       "level": "Medium",
@@ -458,7 +490,15 @@
         "Snorkelling and cliff-jump add-ons",
         "Lunches"
       ],
-      "note": "Adventure level Medium: one demanding day of steps at Nongriat (we pace it, and anyone can stay back in Sohra) and kayaking suitable for beginners. The Umngot is clearest from about November to April; in the monsoon it turns muddy and boating can be suspended, so we don't run this trip then."
+      "note": "Adventure level Medium: one demanding day of steps at Nongriat (we pace it, and anyone can stay back in Sohra) and kayaking suitable for beginners. The Umngot is clearest from about November to April; in the monsoon it turns muddy and boating can be suspended, so we don't run this trip then.",
+      "image_alt": "A boat that seems to float on the clear Umngot river at Dawki, Meghalaya",
+      "image_fallback": "assets/img/scenes/dawki.svg",
+      "photo_credit": {
+        "name": "Amrita Sharma",
+        "profile": "https://unsplash.com/@ummmrita",
+        "page": "https://unsplash.com/photos/k7LDuaoP5nc",
+        "source": "Unsplash"
+      }
     },
     {
       "slug": "swiss-alps-snow-and-rail",

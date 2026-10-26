@@ -136,13 +136,19 @@ SCENES = {
 
 
 def media(pkg: dict, alt: bool = False) -> str:
-    if pkg.get("image"):
-        alt = pkg["title"]
-        src = ROOT / pkg["image"]
-        if src.suffix == ".svg" and src.exists():  # illustrated scene: use its <title> as the description
-            m = re.search(r"<title>(.*?)</title>", src.read_text(encoding="utf-8"), re.S)
-            alt = "Illustration: " + m.group(1) if m else alt
-        return f'<img src="/{esc(pkg["image"])}" alt="{esc(alt)}" width="800" height="500" loading="lazy">'
+    img = pkg.get("image")
+    if img:
+        remote = img.startswith("http")
+        src = img if remote else "/" + img
+        desc = pkg.get("image_alt") or pkg["title"]
+        local = ROOT / img if not remote else None
+        if local and local.suffix == ".svg" and local.exists():  # illustrated scene: use its <title>
+            m = re.search(r"<title>(.*?)</title>", local.read_text(encoding="utf-8"), re.S)
+            desc = "Illustration: " + m.group(1) if m else desc
+        fb = pkg.get("image_fallback")
+        onerr = f' onerror="this.onerror=null;this.src=\'/{esc(fb)}\'"' if fb else ""
+        return (f'<img src="{esc(src)}" alt="{esc(desc)}" width="800" height="500" loading="lazy" '
+                f'referrerpolicy="no-referrer-when-downgrade"{onerr}>')
     body = SCENES.get(pkg.get("scene", ""), SCENES["alps"])
     return f'<svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">{body}</svg>'
 
@@ -309,6 +315,15 @@ def package_card(p: dict, heading: str = "h3") -> str:
     <a class="btn btn--accent btn--sm" href="/enquire.html?package={p['slug']}">Request trip</a></div>
   </div>
 </article>"""
+
+
+def photo_credit(p: dict) -> str:
+    c = p.get("photo_credit")
+    if not c:
+        return ""
+    utm = "?utm_source=viotours&utm_medium=referral"
+    return (f'<p class="photo-credit">Photo: <a href="{esc(c["profile"])}{utm}" target="_blank" rel="noopener">{esc(c["name"])}</a> on '
+            f'<a href="{esc(c["page"])}{utm}" target="_blank" rel="noopener">{esc(c.get("source", "Unsplash"))}</a></p>')
 
 
 def level_chip(p: dict) -> str:
@@ -480,7 +495,7 @@ def build() -> None:
   <span class="eyebrow">{esc(p['departure'])}</span>
   <h1 class="her-hero" style="margin-top:12px">{esc(p['title'])}</h1>
   <p class="lead" style="margin:12px 0 0">{esc(p['places'])}</p>
-  <div class="pkg-hero">{media(p)}</div>
+  <div class="pkg-hero">{media(p)}</div>{photo_credit(p)}
 </div></section>
 <section class="section"><div class="container pkg-layout">
   <div>
