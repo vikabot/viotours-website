@@ -16,7 +16,7 @@
         "car"
       ],
       "scene": "alps",
-      "image": "",
+      "image": "assets/img/scenes/almaty.svg",
       "nights": 6,
       "group": "6–15 travellers",
       "departure": "Small-group departure · late Mar / early Apr 2027",
@@ -95,7 +95,7 @@
         "cycling"
       ],
       "scene": "fjord",
-      "image": "",
+      "image": "assets/img/scenes/new-zealand.svg",
       "nights": 9,
       "group": "6–15 travellers",
       "departure": "Small-group departure · April 2027",
@@ -190,7 +190,7 @@
         "car"
       ],
       "scene": "silkroad",
-      "image": "",
+      "image": "assets/img/scenes/samarkand.svg",
       "nights": 10,
       "group": "6–15 travellers",
       "departure": "Small-group departure · May 2027",
@@ -288,7 +288,7 @@
         "car"
       ],
       "scene": "himalaya",
-      "image": "",
+      "image": "assets/img/scenes/darjeeling.svg",
       "nights": 10,
       "group": "6–12 travellers",
       "level": "High",
@@ -389,7 +389,7 @@
         "cruise"
       ],
       "scene": "meghalaya",
-      "image": "",
+      "image": "assets/img/scenes/dawki.svg",
       "nights": 7,
       "group": "6–15 travellers",
       "level": "Medium",

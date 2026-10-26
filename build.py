@@ -137,7 +137,12 @@ SCENES = {
 
 def media(pkg: dict, alt: bool = False) -> str:
     if pkg.get("image"):
-        return f'<img src="/{esc(pkg["image"])}" alt="{esc(pkg["title"])}" loading="lazy">'
+        alt = pkg["title"]
+        src = ROOT / pkg["image"]
+        if src.suffix == ".svg" and src.exists():  # illustrated scene: use its <title> as the description
+            m = re.search(r"<title>(.*?)</title>", src.read_text(encoding="utf-8"), re.S)
+            alt = "Illustration: " + m.group(1) if m else alt
+        return f'<img src="/{esc(pkg["image"])}" alt="{esc(alt)}" width="800" height="500" loading="lazy">'
     body = SCENES.get(pkg.get("scene", ""), SCENES["alps"])
     return f'<svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">{body}</svg>'
 
