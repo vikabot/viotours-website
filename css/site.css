@@ -48,6 +48,7 @@ a:hover { color: var(--brand-strong); }
 :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
 p { margin: 0 0 var(--space-4); }
 h1, h2, h3, h4 { margin: 0; }
+[hidden] { display: none !important; }
 .sr-only, input.sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; border: 0 !important; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .skip { position: absolute; left: var(--space-4); top: -60px; z-index: 100; background: var(--brand); color: var(--on-brand); padding: var(--space-2) var(--space-4); border-radius: var(--radius-md); }
 .skip:focus { top: var(--space-4); }

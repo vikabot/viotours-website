@@ -275,6 +275,192 @@
       "note": "May has mild days in the Silk Road cities and green valleys in Kyrgyzstan. High-pasture yurt camps such as Song-Kul usually open from June, so this route stays lower."
     },
     {
+      "slug": "darjeeling-gangtok-sandakphu",
+      "title": "Darjeeling & Gangtok: Sandakphu trek",
+      "places": "Darjeeling · Singalila National Park · Sandakphu · Gangtok · Tsomgo Lake",
+      "summary": "Tea gardens and the toy train, then a guided trek along the Singalila Ridge to Sandakphu, the highest point in West Bengal, for sunrise over Kangchenjunga and, on a clear day, Everest. Gangtok and a high lake to finish.",
+      "styles": [
+        "adventure",
+        "snow"
+      ],
+      "activities": [
+        "trail",
+        "car"
+      ],
+      "scene": "himalaya",
+      "image": "",
+      "nights": 10,
+      "group": "6–12 travellers",
+      "level": "High",
+      "region": "India",
+      "departure": "India · Oct–Dec or Mar–May",
+      "flag": "Trek",
+      "price_inr": null,
+      "price_basis": "per person, twin share, flights from your city quoted on request",
+      "featured": false,
+      "position": 0,
+      "active": true,
+      "itinerary": [
+        [
+          "Day 1",
+          "Bagdogra to Darjeeling",
+          "Met at Bagdogra airport. A scenic drive up through the tea gardens to Darjeeling."
+        ],
+        [
+          "Day 2",
+          "Darjeeling",
+          "Tiger Hill at sunrise, Batasia Loop, a joyride on the UNESCO-listed toy train and a tea-estate tasting. Kit check with your trek leader."
+        ],
+        [
+          "Day 3",
+          "Manebhanjan to Tumling",
+          "Drive to the trailhead and begin the Singalila Ridge trek with licensed local guides. A short first day to settle in."
+        ],
+        [
+          "Day 4",
+          "Tumling to Kalipokhri",
+          "Forest and ridge walking along the India–Nepal border, through rhododendron in spring."
+        ],
+        [
+          "Day 5",
+          "Kalipokhri to Sandakphu",
+          "The final climb to Sandakphu at about 3,636 m. Sunset over the Kangchenjunga range."
+        ],
+        [
+          "Day 6",
+          "Sandakphu sunrise",
+          "Dawn views of the Sleeping Buddha — Kangchenjunga — and, on a clear morning, Everest, Lhotse and Makalu. Descend towards Srikhola."
+        ],
+        [
+          "Day 7",
+          "Srikhola to Darjeeling",
+          "Walk out to Rimbik and drive back to Darjeeling for a hot shower and a celebration dinner."
+        ],
+        [
+          "Day 8",
+          "Drive to Gangtok",
+          "Along the Teesta valley into Sikkim. An evening on MG Marg."
+        ],
+        [
+          "Day 9",
+          "Tsomgo Lake",
+          "A permit day trip to the glacial lake at about 3,750 m and Baba Mandir, weather and road permitting."
+        ],
+        [
+          "Day 10",
+          "Gangtok",
+          "Rumtek Monastery, the ropeway and a free afternoon."
+        ],
+        [
+          "Day 11",
+          "Fly home",
+          "Drive to Bagdogra for your flight."
+        ]
+      ],
+      "includes": [
+        "Hotels in Darjeeling and Gangtok, trek lodges on the ridge",
+        "Licensed local trek guides and porters for the Singalila section",
+        "Singalila National Park and Tsomgo Lake permits",
+        "Private vehicles throughout",
+        "All meals on the trek; breakfast and dinner in towns",
+        "A viotours trek leader with a first-aid and oxygen kit",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Flights to Bagdogra (quoted from your city)",
+        "Restricted Area Permit for foreign nationals (we arrange it)",
+        "Personal trekking gear"
+      ],
+      "note": "Adventure level High: four trekking days at altitude on rough trails, up to about 3,636 m. Travellers should be comfortable walking 6–7 hours a day. We send a fitness plan and check every traveller before booking. Ridge lodges are simple and shared."
+    },
+    {
+      "slug": "shillong-guwahati-dawki",
+      "title": "Shillong & Guwahati: Dawki kayaking",
+      "places": "Guwahati · Shillong · Sohra (Cherrapunji) · Nongriat · Dawki · Mawlynnong",
+      "summary": "Living root bridges, waterfalls in the clouds and a kayak on the glass-clear Umngot river at Dawki. Meghalaya's best, with a sunset cruise on the Brahmaputra to begin.",
+      "styles": [
+        "adventure",
+        "family"
+      ],
+      "activities": [
+        "kayak",
+        "trail",
+        "car",
+        "cruise"
+      ],
+      "scene": "meghalaya",
+      "image": "",
+      "nights": 7,
+      "group": "6–15 travellers",
+      "level": "Medium",
+      "region": "India",
+      "departure": "India · Nov–Apr",
+      "flag": "Kayak",
+      "price_inr": null,
+      "price_basis": "per person, twin share, flights from your city quoted on request",
+      "featured": false,
+      "position": 0,
+      "active": true,
+      "itinerary": [
+        [
+          "Day 1",
+          "Arrive Guwahati",
+          "Met at the airport. Kamakhya Temple and a sunset cruise on the Brahmaputra."
+        ],
+        [
+          "Day 2",
+          "Drive to Shillong",
+          "Past Umiam Lake into the hills. An evening at Police Bazaar."
+        ],
+        [
+          "Day 3",
+          "Sohra (Cherrapunji)",
+          "Nohkalikai Falls, the Seven Sisters Falls and the Mawsmai caves."
+        ],
+        [
+          "Day 4",
+          "Double-decker root bridge",
+          "A guided trek down to Nongriat's double-decker living root bridge and the blue pools beyond. Plenty of steps, at an easy pace."
+        ],
+        [
+          "Day 5",
+          "Mawlynnong and Dawki",
+          "The famously clean village of Mawlynnong and the Riwai root bridge, then on to the Umngot river."
+        ],
+        [
+          "Day 6",
+          "Kayaking at Shnongpdeng",
+          "A morning kayak on water so clear the boats seem to float, with snorkelling and cliff jumps for the bold. Riverside camp or guesthouse."
+        ],
+        [
+          "Day 7",
+          "Laitlum and Shillong",
+          "Laitlum canyons at sunrise, Ward's Lake and a Khasi dinner."
+        ],
+        [
+          "Day 8",
+          "Fly home",
+          "Drive to Guwahati airport."
+        ]
+      ],
+      "includes": [
+        "7 nights in hotels, a homestay and a riverside camp",
+        "Kayaking with a licensed operator, life jackets and a safety boat",
+        "Root-bridge trek with a local Khasi guide",
+        "Brahmaputra sunset cruise",
+        "Private vehicle throughout",
+        "Daily breakfast and 5 dinners, vegetarian options",
+        "A viotours guide throughout",
+        "Travel insurance and 24×7 helpline"
+      ],
+      "excludes": [
+        "Flights to Guwahati (quoted from your city)",
+        "Snorkelling and cliff-jump add-ons",
+        "Lunches"
+      ],
+      "note": "Adventure level Medium: one demanding day of steps at Nongriat (we pace it, and anyone can stay back in Sohra) and kayaking suitable for beginners. The Umngot is clearest from about November to April; in the monsoon it turns muddy and boating can be suspended, so we don't run this trip then."
+    },
+    {
       "slug": "swiss-alps-snow-and-rail",
       "title": "Swiss Alps by snow train",
       "places": "Zurich · Lucerne · Interlaken · Zermatt",

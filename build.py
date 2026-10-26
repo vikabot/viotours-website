@@ -148,6 +148,13 @@ SCENES["fjord"] = """<rect width="320" height="200" fill="var(--surface-sunk)"/>
 <path d="M60 160 Q160 150 260 160 L270 200 L50 200Z" fill="var(--brand-strong)"/>
 <path d="M118 170 h44 l-6 7 h-34z" fill="var(--surface-raised)"/><path d="M130 170 v-8 h14 v8" fill="var(--surface-raised)"/>
 <path d="M40 40 Q46 90 44 132" stroke="var(--surface-raised)" stroke-width="2" fill="none" opacity=".7"/>"""
+SCENES["meghalaya"] = """<rect width="320" height="200" fill="var(--surface-sunk)"/><circle cx="70" cy="44" r="18" fill="var(--accent)"/>
+<path d="M0 120 Q60 70 120 104 Q170 60 220 96 Q270 70 320 100 L320 200 L0 200Z" fill="var(--brand)"/>
+<path d="M196 90 C200 120 198 140 204 160" stroke="var(--surface-raised)" stroke-width="6" fill="none" stroke-linecap="round" opacity=".9"/>
+<path d="M0 150 Q160 138 320 152 L320 200 L0 200Z" fill="#7fb3ad"/><path d="M0 172 Q160 164 320 174 L320 200 L0 200Z" fill="#5f9690"/>
+<g fill="var(--brand-strong)"><path d="M118 160 q22 6 44 0 l-4 5 h-36z"/><path d="M136 160 l4 -10 h6 l4 10z"/></g>
+<path d="M120 170 q20 4 40 0" stroke="var(--brand-strong)" stroke-width="1" fill="none" opacity=".35"/>
+<path d="M60 186 h6 M84 182 h4 M240 184 h8" stroke="var(--brand-strong)" stroke-width="1.5" opacity=".4"/>"""
 SCENES["silkroad"] = """<rect width="320" height="200" fill="var(--surface-sunk)"/><circle cx="262" cy="44" r="20" fill="var(--accent)"/>
 <rect x="0" y="172" width="320" height="28" fill="var(--brand-strong)"/>
 <g fill="var(--brand)"><rect x="40" y="76" width="16" height="96"/><path d="M38 76 h20 l-3 -8 h-14z"/><rect x="264" y="76" width="16" height="96"/><path d="M262 76 h20 l-3 -8 h-14z"/>
@@ -284,8 +291,9 @@ PAGES: list[tuple[str, bool]] = []
 def package_card(p: dict, heading: str = "h3") -> str:
     chips = (f'<span class="chip">{icon("events", "icon icon--sm")}{p["nights"]} nights</span>'
              f'<span class="chip">{icon("family", "icon icon--sm")}{esc(p["group"])}</span>'
-             f'<span class="chip">{icon("guide", "icon icon--sm")}Guide included</span>')
-    return f"""<article class="card" data-styles="{' '.join(p['styles'])}" data-activities="{' '.join(p['activities'])}">
+             f'<span class="chip">{icon("guide", "icon icon--sm")}Guide included</span>' + level_chip(p))
+    tags = p['styles'] + (['india'] if p.get('region') == 'India' else [])
+    return f"""<article class="card" data-styles="{' '.join(tags)}" data-activities="{' '.join(p['activities'])}">
   <div class="card__media">{media(p)}<span class="card__flag badge badge--gold">{icon("family", "icon icon--sm")}{esc(p['flag'])}</span></div>
   <div class="card__body">
     <span class="eyebrow">{esc(p['departure'])}</span>
@@ -296,6 +304,12 @@ def package_card(p: dict, heading: str = "h3") -> str:
     <a class="btn btn--accent btn--sm" href="/enquire.html?package={p['slug']}">Request trip</a></div>
   </div>
 </article>"""
+
+
+def level_chip(p: dict) -> str:
+    if not p.get("level"):
+        return ""
+    return f'<span class="chip chip--level">{icon("trail", "icon icon--sm")}Adventure level: {esc(p["level"])}</span>'
 
 
 def price_html(p: dict) -> str:
@@ -427,6 +441,7 @@ def build() -> None:
     # ---------- packages list
     style_filters = '<button class="filter" data-filter-style="all" aria-pressed="true">All trips</button>' + "".join(
         f'<button class="filter" data-filter-style="{k}" aria-pressed="false">{n}</button>' for k, n, _, _ in STYLES)
+    style_filters += '<button class="filter" data-filter-style="india" aria-pressed="false">India</button>'
     act_filters = "".join(
         f'<button class="activity" data-filter-activity="{k}" aria-pressed="false">{icon(k)}{n}</button>' for k, n in ACTIVITIES)
     body = f"""
@@ -469,7 +484,7 @@ def build() -> None:
       <span class="chip">{icon("events", "icon icon--sm")}{p['nights']} nights</span>
       <span class="chip">{icon("family", "icon icon--sm")}{esc(p['group'])}</span>
       <span class="chip">{icon("guide", "icon icon--sm")}Guide included</span>
-      <span class="chip">{icon("safety", "icon icon--sm")}Insured</span>{acts}
+      <span class="chip">{icon("safety", "icon icon--sm")}Insured</span>{level_chip(p)}{acts}
     </div>
     <div class="pkg-mobile-cta">{price_html(p)}
       <a class="btn btn--accent" href="/enquire.html?package={p['slug']}">Request this trip</a></div>
